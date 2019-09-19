@@ -1,0 +1,8 @@
+@import 'variable';
+@import 'fonts';
+
+
+body{
+  @extend %Body;
+  color: $Dark50;
+}

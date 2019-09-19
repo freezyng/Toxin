@@ -1,0 +1,43 @@
+// color
+$Dark100: #1F2041;
+$Dark75: rgba(31, 32, 65, 0.75);
+$Dark50: rgba(31, 32, 65, 0.5);
+$Dark25: rgba(31, 32, 65, 0.25);
+$Dark5: rgba(31, 32, 65, 0.05);
+$Purple: #BC9CFF;
+$Green: #6FCF97;
+
+// type
+%H1 {
+  font-family: 'Conv_Quicksand-Bold',Sans-Serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: $Dark100;
+}
+%H2 {
+  font-family: 'Conv_Quicksand-Bold',Sans-Serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 24px;
+  color: $Dark100;
+} 
+%H3 {
+  font-family: 'Conv_Montserrat-Bold',Sans-Serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: $Dark100;
+}
+%Body {
+  font-family: 'Conv_Montserrat-Regular',Sans-Serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: $Dark75;
+}
