@@ -1,0 +1,21 @@
+include ../utils/mixins.pug
+
+header.header
+  .container
+    .header-wrapper
+      .header__logo
+        img(src='images/Logo.svg')
+      .header__menu
+        ul.header__nav
+          li 
+            a.list--item О нас
+          li
+            a.list--item Услуги
+          li
+            a.list--item Вакансии
+          li
+            a.list--item Новости
+          li
+            a.list--item Соглашения
+        +btn('#', 'войти', 'btn__no-bg')
+        +btn('#', 'зарегистрироваться', 'btn__bg')

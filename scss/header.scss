@@ -1,0 +1,38 @@
+.header {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+}
+
+.header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__menu {
+    display: flex;
+}
+
+.header__nav {
+    display: flex;
+}
+
+.header__nav .list--item {
+    @extend %Body;
+    color: $Dark50;
+    margin-right: 30px;
+}
+
+.btn__no-bg {
+    width: 87px;
+    height: 34px;
+    line-height: 35px;
+}
+
+.btn__bg {
+    width: 196px;
+    height: 34px;
+    line-height: 35px;
+}

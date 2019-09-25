@@ -1,2 +1,26 @@
+@import 'reset';
 @import 'variable';
 @import 'fonts';
+@import 'mixins';
+@import 'header';
+
+a {
+    text-decoration: none;
+}
+a:hover {
+    cursor: pointer;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    @extend %Body;
+    background-color: #eee;
+}
+.container {
+    max-width: 1190px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    width: 100%;
+}
