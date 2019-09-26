@@ -19,16 +19,22 @@
     display: flex;
 }
 
-.header__nav .list--item {
+.list--item {
     @extend %Body;
     color: $Dark50;
     margin-right: 30px;
+    line-height: 35px;
+}
+
+.drop {
+    margin-left: 6px;
 }
 
 .btn__no-bg {
     width: 87px;
     height: 34px;
     line-height: 35px;
+    margin-right: 20px;
 }
 
 .btn__bg {
