@@ -20,7 +20,7 @@
 }
 
 .list--item {
-    @extend %Body;
+    @extend %Montserrat-Regular;
     color: $Dark50;
     margin-right: 30px;
     line-height: 35px;
@@ -33,12 +33,18 @@
 .btn__no-bg {
     width: 87px;
     height: 34px;
-    line-height: 35px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 33px;
     margin-right: 20px;
+    text-transform: uppercase;
 }
 
 .btn__bg {
     width: 196px;
     height: 34px;
+    font-size: 12px;
+    font-weight: bold;
     line-height: 35px;
+    text-transform: uppercase;
 }

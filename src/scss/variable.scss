@@ -8,36 +8,12 @@ $Purple: #BC9CFF;
 $Green: #6FCF97;
 
 // type
-%H1 {
+%Quicksand-Bold {
   font-family: 'Conv_Quicksand-Bold', Sans-Serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 30px;
-  color: $Dark100;
-}
-%H2 {
-  font-family: 'Conv_Quicksand-Bold', Sans-Serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 19px;
-  line-height: 24px;
-  color: $Dark100;
 } 
-%H3 {
-  font-family: 'Conv_Montserrat-Bold', Sans-Serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  text-transform: uppercase;
-  color: $Dark100;
+%Montserrat-SemiBold {
+  font-family: 'Conv_Montserrat-SemiBold', Sans-Serif;
 }
-%Body {
+%Montserrat-Regular {
   font-family: 'Conv_Montserrat-Regular', Sans-Serif;
-  font-style: normal; 
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  color: $Dark75;
 }

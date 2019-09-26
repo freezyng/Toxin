@@ -3,7 +3,32 @@
     padding-top: 100px;
     padding-bottom: 100px;
 }
+
 .footer__title {
     margin-top: 20px;
-    @extend %Body;
+    font-size: 14px;
+    line-height: 24px;
+    @extend %Montserrat-Regular;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-list__item, .footer-list__btn {
+    @extend %Montserrat-Regular;
+    margin-bottom: 20px;
+    color: $Dark50;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.footer-list__item:first-child {
+    text-transform: uppercase;
+    @extend %Montserrat-SemiBold;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    color: $Dark100;
 }
