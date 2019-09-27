@@ -14,13 +14,16 @@ a:hover {
 * {
     box-sizing: border-box;
 }
-body {
-    background-color: #eee;
+.body {
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: #E5E5E5;
 }
 .container {
-    max-width: 1190px;
-    padding-left: 15px;
-    padding-right: 15px;
+    max-width: 1440px;
+    height: 100%;
+    padding-left: 140px;
+    padding-right: 140px;
     margin: 0 auto;
     width: 100%;
 }
