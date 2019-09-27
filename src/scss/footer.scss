@@ -32,3 +32,24 @@
     line-height: 15px;
     color: $Dark100;
 }
+
+form[name='form-footer'] .footer-list__item {
+    color: $Dark75;
+}
+
+form[name='form-footer'] input[name='email'] {
+    width: 260px;
+    height: 44px;
+    padding-left: 15px;
+    
+    &::placeholder {
+        color: $Dark25;
+    }
+    
+	&:focus{
+		&::placeholder { /* Mozilla Firefox 4 to 18 */
+			color: transparent;
+			opacity: 0;
+		}
+    }
+}
