@@ -8,16 +8,18 @@ header.header
       .header__menu
         ul.header__nav
           li 
-            a.list--item О нас
+            +btn('#', 'О нас', 'list--item')
           li
-            a.list--item Услуги
-              img(src='images/expand_more.png')(class='drop')
+            +btn('#', 'Услуги', 'list--item')
+            span.drop
+              img(src='images/expand_more.png')
           li
-            a.list--item Вакансии
+            +btn('#', 'Вакансии', 'list--item')
           li
-            a.list--item Новости
+            +btn('#', 'Новости', 'list--item')
           li
-            a.list--item Соглашения
-              img(src='images/expand_more.png')(class='drop')
+            +btn('#', 'Соглашения', 'list--item')
+            span.drop
+              img(src='images/expand_more.png')
         +btn('#', 'войти', 'btn__no-bg')
         +btn('#', 'зарегистрироваться', 'btn__bg')

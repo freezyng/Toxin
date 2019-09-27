@@ -19,17 +19,29 @@
 
 .header__nav {
     display: flex;
+    & li {
+        margin-right: 30px;
+
+        & .drop {
+            display: inline-block;
+            width: 24px;
+            height: 21px;
+
+            &:hover {
+                cursor: pointer;
+            }
+            
+            & img {
+                margin-left: 6px;
+            }
+        }
+    }
 }
 
 .list--item {
     @extend %Montserrat-Regular;
     color: $Dark50;
-    margin-right: 30px;
     line-height: 35px;
-}
-
-.drop {
-    margin-left: 6px;
 }
 
 .btn__no-bg {
