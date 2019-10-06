@@ -24,7 +24,7 @@
     "webpack-dev-server": "^3.8.0"
   },
   "scripts": {
-    "prebuild": "del-cli dist -f",
+    "prebuild": "del-cli fonts -f images -f",
     "dev": "webpack-dev-server --mode development --open",
     "build": "webpack --mode production"
   },

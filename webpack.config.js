@@ -51,17 +51,21 @@ module.exports = {
           options: { sourceMap: true }
         }
       ]
-    },
-      {
-        test: /\.(eot|svg|ttf|woff|woff2)$/,
-        use: [
-          {
-            loader: 'file-loader?name=../fonts/[name].[ext]'
-          },
-          {
-            loader: 'file-loader?name=../fonts/[name].[ext]'
-          }
-        ]
+    },{
+      test: /\.(ttf|eot|woff|svg|woff2)$/,
+      use: {
+        loader: "file-loader",
+        options: {
+          name: '[name].[ext]',
+          outputPath: "../fonts/"
+        }
+      }
+    },{
+        test: /\.(png|jpg)$/,
+        loader: 'file-loader',
+        query: {
+            name: '../images/[name].[ext]'
+        }
       },
     ]
   },
@@ -75,14 +79,14 @@ module.exports = {
         filename: `css/main.css`,
       }),
       new CopyWebpackPlugin([
-      {
-        from: './src/images',
-        to: './images'
-      },
-      {
-        from: './src/fonts',
-        to: './fonts'
-      }
+        {
+          from: './src/fonts',
+          to: './fonts'
+        },
+        {
+          from: './src/images',
+          to: './images'
+        }
     ]),
     ]
 }

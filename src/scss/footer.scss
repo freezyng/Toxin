@@ -53,10 +53,6 @@ form[name='form-footer'] {
         width: 260px;
         height: 44px;
         padding-left: 15px;
-        background: #FFFFFF;
-        border: 1px solid rgba(31, 32, 65, 0.25);
-        box-sizing: border-box;
-        border-radius: 4px;
         &::placeholder {
             @extend %Montserrat-Regular;
             font-size: 14px;
