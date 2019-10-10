@@ -2,6 +2,19 @@
     height: 830px;
     background: url(../images/bg-first-main-content.jpg);
     background-position: 0 100%;
+
+    & .first-main-content__text {
+        width: 297px;
+        height: 48px;
+        @extend %Montserrat-Regular;
+        font-size: 14px;
+        line-height: 24px;
+        text-align: right;
+        color: $Dark75;
+        float: right;
+        margin-right: -6px;
+        margin-top: 387px;
+    }
 }
 
 .first-main-content__form {
@@ -56,8 +69,9 @@
 }
 
 .first-main-content__form__head {
+    @extend %OpenSans-Bold;
     font-weight: bold;
-    font-size: 26px;
+    font-size: 24px;
     line-height: 30px;
     color: $Dark100;
     margin-bottom: 16px;
