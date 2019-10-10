@@ -33,9 +33,13 @@
   <div class="container">
     <div class="first-main-content__form">
       <h2 class="first-main-content__form__head">Найдём номера под ваши пожелания</h2>
-      <form>прибытие выезд<br>
-        <input type="date" name="arrival">
-        <input type="date" name="departure">гости
+      <form>
+        <div class="arrival">прибытие<br>
+          <input type="date" name="arrival">
+        </div>
+        <div class="departure">выезд<br>
+          <input type="date" name="departure">
+        </div>гости
         <input type="number">
         <input type="button" value="подобрать номер">
       </form>
@@ -86,7 +90,7 @@
             <p class="footer-list__item">подписка</p>
             <p class="footer-list__item">Получайте специальные <br> предложения и новости сервиса</p>
             <input type="text" name="email" placeholder="Email" required>
-            <button type="submit"><img src="images/arrow_forward.png"></button>
+            <input type="image" name="picture" src="../images/arrow_forward.svg">
           </form>
         </div>
       </div>

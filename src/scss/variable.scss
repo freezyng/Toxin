@@ -1,3 +1,5 @@
+@import 'fonts';
+
 // color
 $Dark100: #1F2041;
 $Dark75: rgba(31, 32, 65, 0.75);
@@ -8,12 +10,23 @@ $Purple: #BC9CFF;
 $Green: #6FCF97;
 
 // type
-%Quicksand-Bold {
-  font-family: 'Conv_Quicksand-Bold', Sans-Serif;
-} 
+
 %Montserrat-SemiBold {
   font-family: 'Conv_Montserrat-SemiBold', Sans-Serif;
 }
+
 %Montserrat-Regular {
   font-family: 'Conv_Montserrat-Regular', Sans-Serif;
+}
+
+%Montserrat-Bold {
+  font-family: 'Conv_Montserrat-Bold', Sans-Serif;
+}
+
+%Montserrat-ExtraBold {
+  font-family: 'Conv_Montserrat-ExtraBold', Sans-Serif;
+}
+
+%Montserrat-Medium {
+  font-family: 'Conv_Montserrat-Medium', Sans-Serif;
 }

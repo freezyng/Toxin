@@ -25,7 +25,7 @@
   },
   "scripts": {
     "prebuild": "del-cli fonts -f images -f",
-    "dev": "webpack-dev-server --mode development --open",
+    "dev": "webpack-dev-server --mode development --host 192.168.1.10 --port 8080 --open",
     "build": "webpack --mode production"
   },
   "keywords": [],

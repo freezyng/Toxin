@@ -19,10 +19,11 @@
     & input[type='date'] {
         width: 150px;
         height: 44px;
-        font-size: 14px;
+        padding-bottom: 6px;
+        font-size: 17px;
         @extend %Montserrat-Regular;
         color: $Dark75;
-        padding-left: 15px;
+        padding-left: 14px;
     }
     & input[type='number'] {
         width: 320px;
@@ -31,14 +32,33 @@
     & form {
         width: 100%;
         height: 100%;
+        @extend %Montserrat-SemiBold;
+        font-size: 12px;
+        line-height: 23px;
+        text-transform: uppercase;
+    }
+    & .arrival {
+        float: left;
+        margin-bottom: 20px;
+        @extend %Montserrat-SemiBold;
+        font-size: 12px;
+        line-height: 23px;
+        text-transform: uppercase;
+    }
+    & .departure {
+        float: right;
+        margin-bottom: 20px;
+        @extend %Montserrat-SemiBold;
+        font-size: 12px;
+        line-height: 23px;
+        text-transform: uppercase;
     }
 }
 
 .first-main-content__form__head {
-    @extend %Quicksand-Bold;
-    font-size: 26.2px;
+    font-weight: bold;
+    font-size: 26px;
     line-height: 30px;
-    font-weight: 600;
     color: $Dark100;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
 }
