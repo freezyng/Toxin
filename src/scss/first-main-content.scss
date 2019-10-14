@@ -32,16 +32,18 @@
     & input[type='date'] {
         width: 150px;
         height: 44px;
-        padding-bottom: 6px;
-        font-size: 17px;
+        font-size: 14px;
         @extend %Montserrat-Regular;
         color: $Dark75;
         padding-left: 14px;
+        text-transform: uppercase;
     }
+
     & input[type='number'] {
         width: 320px;
         height: 44px;
     }
+
     & form {
         width: 100%;
         height: 100%;
@@ -50,7 +52,9 @@
         line-height: 23px;
         text-transform: uppercase;
     }
-    & .arrival {
+
+    & label[name='arrival'] {
+        position: relative;
         float: left;
         margin-bottom: 20px;
         @extend %Montserrat-SemiBold;
@@ -58,13 +62,51 @@
         line-height: 23px;
         text-transform: uppercase;
     }
-    & .departure {
+
+    & label[name='departure'] {
+        position: relative;
         float: right;
         margin-bottom: 20px;
         @extend %Montserrat-SemiBold;
         font-size: 12px;
         line-height: 23px;
         text-transform: uppercase;
+    }
+    
+    & input[type='date']::-webkit-inner-spin-button { 
+        display: none;
+    }
+
+    & input[type='date']::-webkit-calendar-picker-indicator {
+        display: none;
+    }
+
+    & input[type='image'] {
+        position: absolute;
+        border: none;
+        padding: 18px 16px;
+        right: 0;
+        top: 23px;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    & .first-main-content__form__btn__bg {
+        width: 320px;
+        height: 44px;
+        display: block;
+        font-size: 12px;
+        font-weight: bold;
+        line-height: 44px;
+        margin-top: 31px;
+        text-transform: uppercase;
+        @extend %Montserrat-SemiBold;
+    }
+
+    & .btn__svg {
+        position: relative;
+        top: -32px;
+        left: 277px;
+        padding: 14px 13px;
     }
 }
 
