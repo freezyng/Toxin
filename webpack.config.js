@@ -54,18 +54,17 @@ module.exports = {
     },{
       test: /\.(ttf|eot|woff|svg|woff2)$/,
       use: {
-        loader: "file-loader",
+        loader: 'file-loader',
         options: {
-          name: '[name].[ext]',
-          outputPath: "../fonts/"
-        }
+          emitFile: false,
+        },
       }
     },{
         test: /\.(png|jpg)$/,
-        loader: 'file-loader',
-        query: {
-            name: '../images/[name].[ext]'
-        }
+          loader: 'file-loader',
+          options: {
+            emitFile: false,
+          },
       },
     ]
   },
