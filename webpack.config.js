@@ -57,6 +57,7 @@ module.exports = {
         loader: 'file-loader',
         options: {
           emitFile: false,
+          name: '../fonts/[name].[ext]',
         },
       }
     },{
@@ -64,6 +65,7 @@ module.exports = {
           loader: 'file-loader',
           options: {
             emitFile: false,
+            name: '../images/[name].[ext]',
           },
       },
     ]
