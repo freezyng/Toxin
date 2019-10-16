@@ -29,7 +29,7 @@
     box-sizing: border-box;
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-    & input[type='date'] {
+    & input[type='text'] {
         width: 150px;
         height: 44px;
         font-size: 14px;
@@ -73,13 +73,13 @@
         text-transform: uppercase;
     }
     
-    & input[type='date']::-webkit-inner-spin-button { 
-        display: none;
-    }
+    // & input[type='date']::-webkit-inner-spin-button { 
+    //     display: none;
+    // }
 
-    & input[type='date']::-webkit-calendar-picker-indicator {
-        display: none;
-    }
+    // & input[type='date']::-webkit-calendar-picker-indicator {
+    //     display: none;
+    // }
 
     & input[type='image'] {
         position: absolute;
