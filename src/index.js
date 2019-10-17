@@ -2,8 +2,25 @@ import './scss/main.scss';
 import $ from 'jquery/dist/jquery.min.js';
 import 'air-datepicker';
 
-// Инициализация
-$('datepicker-here').datepicker();
+$('.here').on('click', function(){
+    event.preventDefault()
+    });
 
-// Доступ к экземпляру объекта
-$('datepicker-here').data('datepicker');
+$('.arrival-btn').datepicker({
+    toggleSelected: true,
+    inline: true,
+    onSelect: function (fd, d, picker) { 
+        $("#start_one").val(fd.split("-")[0]);
+        $("#end_one").val(fd.split("-")[1]);
+      }
+      
+});
+
+$('.departure-btn').datepicker({
+    toggleSelected: true,
+    onSelect: function (fd, d, picker) { 
+        $("#start_one").val(fd.split("-")[0]);
+        $("#end_one").val(fd.split("-")[1]);
+      }
+});
+

@@ -53,7 +53,7 @@
         text-transform: uppercase;
     }
 
-    & label[name='arrival'] {
+    & label[for='arrival'] {
         position: relative;
         float: left;
         margin-bottom: 20px;
@@ -63,7 +63,7 @@
         text-transform: uppercase;
     }
 
-    & label[name='departure'] {
+    & label[for='departure'] {
         position: relative;
         float: right;
         margin-bottom: 20px;
@@ -72,14 +72,6 @@
         line-height: 23px;
         text-transform: uppercase;
     }
-    
-    // & input[type='date']::-webkit-inner-spin-button { 
-    //     display: none;
-    // }
-
-    // & input[type='date']::-webkit-calendar-picker-indicator {
-    //     display: none;
-    // }
 
     & input[type='image'] {
         position: absolute;
