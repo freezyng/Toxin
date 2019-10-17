@@ -8,7 +8,6 @@ $('.here').on('click', function(){
 
 $('.arrival-btn').datepicker({
     toggleSelected: true,
-    inline: true,
     onSelect: function (fd, d, picker) { 
         $("#start_one").val(fd.split("-")[0]);
         $("#end_one").val(fd.split("-")[1]);
