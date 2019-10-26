@@ -19,12 +19,12 @@
 
 .first-main-content__form {
     position: relative;
-    top: 70px;
+    top: 72px;
     width: 380px;
     height: 374px;
     background-color: #fff;
     padding: 30px;
-    padding-top: 40px;
+    padding-top: 38px;
     border: 1px solid rgba(0, 0, 0, 0.12);
     box-sizing: border-box;
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
@@ -39,11 +39,6 @@
         text-transform: uppercase;
     }
 
-    & input[type='number'] {
-        width: 320px;
-        height: 44px;
-    }
-
     & form {
         width: 100%;
         height: 100%;
@@ -51,27 +46,110 @@
         font-size: 12px;
         line-height: 23px;
         text-transform: uppercase;
-    }
 
-    & label[for='arrival'] {
-        position: relative;
-        float: left;
-        margin-bottom: 20px;
-        @extend %Montserrat-SemiBold;
-        font-size: 12px;
-        line-height: 23px;
-        text-transform: uppercase;
-    }
+        & label[for='arrival'] {
+            position: relative;
+            float: left;
+            margin-bottom: 16px;
+            @extend %Montserrat-SemiBold;
+            font-size: 12px;
+            line-height: 23px;
+            text-transform: uppercase;
+            margin-top: 3px;
 
-    & label[for='departure'] {
-        position: relative;
-        float: right;
-        margin-bottom: 20px;
-        @extend %Montserrat-SemiBold;
-        margin-right: -2px;
-        font-size: 12px;
-        line-height: 23px;
-        text-transform: uppercase;
+            & input {
+                margin-top: 3px;
+            }
+        }
+
+        & label[for='departure'] {
+            position: relative;
+            float: right;
+            margin-bottom: 16px;
+            @extend %Montserrat-SemiBold;
+            margin-right: -2px;
+            font-size: 12px;
+            line-height: 23px;
+            text-transform: uppercase;
+            margin-top: 3px;
+
+            & input {
+                margin-top: 3px;
+            }
+        }
+
+        & label[for='sum-guests'] {
+            position: relative;
+
+            & input.sum-guests {
+                width: 320px;
+                height: 44px;
+                text-transform: none;
+            }
+
+            & input.sum-guests:focus {
+                border: 1px solid rgba(31,32,65,1);
+            }
+
+            & input[type='image'] {
+                top: 19px;
+            }
+
+            & .sum-guests__drop-down {
+                display: none;
+                padding-left: 14px;
+                padding-top: 3px;
+                position: absolute;
+                top: 61px;
+                background-color: #fff;
+                width: 320px;
+                height: 159px;
+                border: 1px solid rgba(31, 32, 65, 0.5);
+                box-sizing: border-box;
+                box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+                border-bottom-left-radius: 4px;
+                border-bottom-right-radius: 4px;
+                z-index: 3;
+
+                & .sum-guests__drop-down__items {
+                    height: 24%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    & .drop-down__btn {
+                        margin: 0 11px;
+                    }
+
+                    & .sum-all {
+                        margin-right: -5px;
+
+                        & span {
+                            display: inline-block;
+                            padding-top: 2px;
+                            width: 6px;
+                        }
+                    }
+
+                    & .btn-clear {
+                        margin-top: 12px;
+                        margin-left: -1px;
+                    }
+
+                    & .btn-enter {
+                        margin-top: 12px;
+                        margin-right: 7px;
+                        color: #BC9CFF;
+                    }
+
+                }
+            }
+
+            & .sum-guests__drop-down__active {
+                display: block;
+            }
+
+        }
     }
 
     & input[type='image'] {
@@ -99,7 +177,7 @@
         position: relative;
         top: -32px;
         left: 277px;
-        padding: 14px 13px;
+        padding: 18px 13px 11px 13px;
     }
 }
 
@@ -109,5 +187,5 @@
     font-size: 24px;
     line-height: 30px;
     color: $Dark100;
-    margin-bottom: 16px;
+    margin-bottom: 14px;
 }

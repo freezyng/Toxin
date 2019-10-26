@@ -35,14 +35,39 @@
           <h2 class="first-main-content__form__head">Найдём номера под ваши пожелания</h2>
           <form>
             <label for="arrival">прибытие<br>
-              <input class="arrival" type="text" id="start_one" value="ДД.ММ.ГГГГ">
+              <input class="arrival" type="text" id="start_one" placeholder="ДД.ММ.ГГГГ">
               <input class="here arrival-btn datepicker-here" type="image" name="picture" src="dist/images/expand_more.png" data-range="true" data-multiple-dates-separator=" - ">
             </label>
             <label for="departure">выезд<br>
-              <input class="departure" type="text" id="end_one" value="ДД.ММ.ГГГГ">
+              <input class="departure" type="text" id="end_one" placeholder="ДД.ММ.ГГГГ">
               <input class="here departure-btn datepicker-here" type="image" name="picture" src="dist/images/expand_more.png" data-range="true" data-multiple-dates-separator=" - ">
-            </label>гости
-            <input type="number"><a class="btn btn__bg first-main-content__form__btn__bg" href="#">подобрать номер</a><a class="btn__svg" href="#"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            </label>
+            <label for="sum-guests">гости
+              <input class="sum-guests" type="text" placeholder="Сколько гостей">
+              <input type="image" id="open--sum-guests" name="picture" src="dist/images/expand_more.png">
+              <div class="sum-guests__drop-down">
+                <div class="sum-guests__drop-down__items"><span>взрослые</span>
+                  <div class="sum-grownup sum-all">
+                        <button class="drop-down__btn sum-btn">-</button><span class="sum-grownup__num">0</span>
+                        <button class="drop-down__btn sum-btn">+</button>
+                  </div>
+                </div>
+                <div class="sum-guests__drop-down__items"><span>дети</span>
+                  <div class="sum-children sum-all">
+                        <button class="drop-down__btn sum-btn">-</button><span class="sum-children__num">0</span>
+                        <button class="drop-down__btn sum-btn">+</button>
+                  </div>
+                </div>
+                <div class="sum-guests__drop-down__items"><span>младенцы</span>
+                  <div class="sum-babe sum-all">
+                        <button class="drop-down__btn sum-btn">-</button><span class="sum-babe__num">0</span>
+                        <button class="drop-down__btn sum-btn">+</button>
+                  </div>
+                </div>
+                <div class="sum-guests__drop-down__items"><a class="btn btn-clear" href="#">очистить</a><a class="btn btn-enter" href="#">применить</a>
+                </div>
+              </div>
+            </label><a class="btn btn__bg first-main-content__form__btn__bg" href="#">подобрать номер</a><a class="btn__svg" href="#"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M9 0.984375L17.0156 9L9 17.0156L7.59375 15.6094L13.1719 9.98438H0.984375V8.01562H13.1719L7.59375 2.39062L9 0.984375Z" fill="url(#paint0_linear)"/>
 <defs>
 <linearGradient id="paint0_linear" x1="9" y1="-13" x2="9" y2="31" gradientUnits="userSpaceOnUse">

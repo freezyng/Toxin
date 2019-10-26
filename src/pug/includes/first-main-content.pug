@@ -9,15 +9,43 @@ section.first-main-content
         label(for="arrival")
           |прибытие
           br
-          input(type="text" class="arrival" id="start_one" value="ДД.ММ.ГГГГ" )
+          input(type="text" class="arrival" id="start_one" placeholder="ДД.ММ.ГГГГ" )
           input(type="image" name="picture" class="here arrival-btn" src="dist/images/expand_more.png" data-range="true" data-multiple-dates-separator=" - " class="datepicker-here")
         label(for="departure")
           |выезд
           br
-          input(type="text" class="departure" id="end_one" value="ДД.ММ.ГГГГ" )
+          input(type="text" class="departure" id="end_one" placeholder="ДД.ММ.ГГГГ" )
           input(type="image" name="picture" class="here departure-btn" src="dist/images/expand_more.png" data-range="true" data-multiple-dates-separator=" - " class="datepicker-here")
-        |гости
-        input(type="number")
+        label(for="sum-guests")
+          |гости
+          input(type="text" class="sum-guests" placeholder="Сколько гостей")
+          input(type="image" id="open--sum-guests" name="picture" src="dist/images/expand_more.png")
+          .sum-guests__drop-down
+            .sum-guests__drop-down__items
+              span
+                |взрослые
+              .sum-grownup.sum-all
+                +drop-down__btn('-', 'sum-btn')
+                span.sum-grownup__num 0
+                +drop-down__btn('+', 'sum-btn')
+            .sum-guests__drop-down__items
+              span
+                |дети
+              .sum-children.sum-all
+                +drop-down__btn('-', 'sum-btn')
+                span.sum-children__num 0
+                +drop-down__btn('+', 'sum-btn')
+            .sum-guests__drop-down__items
+              span
+                |младенцы
+              .sum-babe.sum-all
+                +drop-down__btn('-', 'sum-btn')
+                span.sum-babe__num 0
+                +drop-down__btn('+', 'sum-btn')
+            .sum-guests__drop-down__items
+              +btn('#', 'очистить', 'btn-clear')
+              +btn('#', 'применить', 'btn-enter')
+
         +btn('#', 'подобрать номер', 'btn__bg first-main-content__form__btn__bg')
         a(href="#" class="btn__svg")
           <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">

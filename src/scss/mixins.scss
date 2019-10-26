@@ -50,6 +50,15 @@
     z-index: -2;
 }
 
+.drop-down__btn {
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 22px;
+    background-color: #fff;
+    color: rgba(31, 32, 65, 0.5);
+}
+
 .btn__no-bg:after {
 background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
 }

@@ -2,9 +2,24 @@ import './scss/main.scss';
 import $ from 'jquery/dist/jquery.min.js';
 import 'air-datepicker';
 
-$('.here').on('click', function(){
-    event.preventDefault()
+
+window.onload = function() {
+    $('.here').on('click', function(){
+      event.preventDefault();
     });
+
+    $('span[data-action="use"]').on('click', function() {
+      $(this).parent('.datepicker--buttons')
+              .parent('.datepicker').removeClass('active');
+    });
+
+    $('#open--sum-guests').on('click', function() {
+      event.preventDefault();
+      $('.sum-guests__drop-down').toggleClass('sum-guests__drop-down__active');
+      $('.sum-guests').focus();
+    })
+}
+
 
 
 var $start = $('.arrival-btn'),
@@ -12,6 +27,8 @@ $end = $('.departure-btn');
 
 $start.datepicker({
     toggleSelected: true,
+    clearButton: true,
+    useButton: true,
     position: "right top",
     offset: -150,
   onSelect: function (fd, date, d, picker) {
@@ -23,8 +40,11 @@ $start.datepicker({
     $end.focus();
   }
 })
+
 $end.datepicker({
     toggleSelected: true,
+    clearButton: true,
+    useButton: true,
     position: "right top",
     offset: -320,
   onSelect: function (fd, date, d, picker) {
